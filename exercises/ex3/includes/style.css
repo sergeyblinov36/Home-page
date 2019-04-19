@@ -10,15 +10,26 @@ header,main,footer,nav,aside,article,section,div{
 /*body*/
 body{ font-family: Arial; }
 /*main*/
-main{
-    width: 1000px;
-    margin: 0px auto;
-}
 
+
+#layout1 main{
+    width: 876px;
+    height:860px;
+    margin: 0px auto;
+    
+   }
+
+#layout2 main{
+    position: relative;
+    width: 88.3%;
+    
+    height: 1860px;
+}
 /*header*/
 
 
 header {
+    position: relative;
  width:100%;
  height:123px;
  background-color: #F2E9E9;
@@ -28,13 +39,60 @@ header {
 
 
 nav{
+    position: relative;
     width: 300px;
     height: 33px;
     margin: 50px auto;
-    background-color: #000000;
 }
 
+nav a{
+    
+    margin: 0.1px;
+    text-decoration: none;
+    left: 0%;
+    right: 75.25%;
+    top: 0%;
+    bottom: 0%;
+    
+    font-family: Amiko;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: normal;
+    padding-right: 4%;
+    color: #000000;
+    position: relative;
+}
+
+nav a:hover:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    background:  #F72828;;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    left:calc(50% - 8px);
+}
+.dot {
+    content: "";
+    position: absolute;
+    top: -15px;
+    background:  #F72828;;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    
+}
+#layout1 .dot{
+    left:calc(10% - 8px);
+}
+
+#layout2 .dot{
+    left:calc(38% - 8px);
+}
 /*footer*/
+
 
 .boxes div{
     position: absolute;
@@ -52,18 +110,23 @@ footer {
 
 /*layout1*/
 
-#layout1 main{
- width: 881px;
- height:860px;
- margin: 0 auto;
- background-color: #333333;
-}
+
 
 #layout1 .text{
+    position: relative;
+    top:30%;
     float: left;
     width: 50%;
     height: 120px;
-    background-color: blue;
+
+}
+
+.text h1{
+    font-size: 72px;
+    font-weight: bold;
+}
+.text h3{
+    font-size: 24px;
 }
 
 #layout1 .boxes{
@@ -72,18 +135,202 @@ top: 0px;
 left: opx;
 float: left;
 width: 50%;
-height: 500px;
-background-color: red;
-}
+height: 860px;
 
+}
+/*left*/
 #layout1 .box1{
-    top:44px;
-    left: 0px;
+    position: absolute;
+    top:17%;
+    left: 0%;
     width: 75px;
     height: 23px;
-
+}
+#layout1 .box2{
+    position: absolute;
+    left: 0%;
+top: 19.5%;
+height: 46px;
+margin-top: 8px;
+width:136px;
+}
+#layout1 .box3{
+    position: absolute;
+    left: 0%;
+    top: 25.7%;
+    margin-top: 11px;
+    height: 404px;
+    width: 134px;
+}
+#layout1 .box4{
+    position: absolute;
+    left: 0%;
+    top: 73.9%;
+    margin-top: 11px;
+    height: 32px;
+    width: 88px;
+}
+#layout1 .box5{
+    position: absolute;
+    left: 0%; 
+    top: 78.9%;
+    margin-top: 7px;
+    height: 25px;
+    width: 26px;
+}
+#layout1 .box52{
+    margin-left: 7px;
+    left:5.5%;
 }
 
+/*mid*/
+
+#layout1 .mid1{
+    position: absolute;
+    left:30.4%;
+    margin-left:15px;
+}
+
+#layout1 .box6{
+
+    top:17%;
+    height: 352px;
+    width: 246px;
+}
+#layout1 .box7{
+
+    top:57.9%;
+    height: 212px;
+    width: 123px;
+    margin-top: 16px;
+}
+
+#layout1 .mid2{
+    position: absolute;
+    left:61.7%;
+    margin-left:14px;
+}
+#layout1 .box8{
+    top:57.9%;
+    height: 105px;
+    width: 55px;
+    margin-top: 16px;
+}
+#layout1 .box9{
+    top:72%;
+    height: 58px;
+    width: 110px;
+    margin-top: 7px;
+}
+
+/*right*/
+.right{
+    position: absolute;
+    right:0%; 
+}
+#layout1 .box10{
+    top:11.8%;
+    height: 55px;
+    width: 28px;
+}
+#layout1 .box102{
+    top:18.2%;
+    margin-top: 11px;
+}
+#layout1 .box103{
+    top:25.85%;
+    margin-top: 11px;
+}
+#layout1 .box11{
+    top:35.2%;
+    height: 196px;
+    width: 28px;
+}
+
+/*layou2*/
+
+#layout2 aside{
+    
+    float: right;
+    background: #EBEF18;
+    width: 11.7%;
+    height: 1884px;
+   
+
+}
+#layout2 main section{
+    position: relative;
+    width: 1000px;
+    height: 1884px;
+   
+    margin: 0px auto;
+    contain: content;
+}
+#layout2 main div{
+    position: absolute;
+    background: #C4C4C4;
+    height: 299px;
+    
+    margin-bottom: 79px;
+}
+
+.left{
+    position: absolute;
+    left: 0%;
+    margin-right: 55px;
+   
+}
+.left.first{
+    margin-top: 119px;
+    width: 47.1%;
+}
+.right.first{
+    margin-top: 287px;
+    width: 47.1%;
+}
+
+.others{
+    width: 100%;
+    margin-top: 80.2%;
+
+}
+.right .last {
+    width: 100%;
+    height: 100px;
+}
 .clear{
     clear: both;
+}
+#layout2 footer{
+    position: fixed;
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    height: 41px;
+}
+
+aside div{
+    position: relative;
+    background: #000000;
+    width: 47.3%;
+    left: 0;
+}
+
+aside div::after{
+    content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.Rectangle1{
+    top: 6.3%;
+}
+.Rectangle2{
+    top: 32.7%;
+}
+
+.Rectangle3{
+    left:52.66%;
+    background: #ffffff;
+    top:7.1%;
+
 }
