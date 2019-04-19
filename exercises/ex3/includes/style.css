@@ -253,8 +253,11 @@ width:136px;
     
     float: right;
     background: #EBEF18;
-    width: 11.7%;
-    height: 1884px;
+    width: 169px;
+    height: 1925px;
+    left: 1271px;
+    top: 123px;
+    
    
 
 }
@@ -262,9 +265,10 @@ width:136px;
     position: relative;
     width: 1000px;
     height: 1884px;
-   
+    max-height: 1884px;
     margin: 0px auto;
     contain: content;
+    
 }
 #layout2 main div{
     position: absolute;
@@ -333,4 +337,18 @@ aside div::after{
     background: #ffffff;
     top:7.1%;
 
+}
+
+
+#layout2 ul{
+    position: relative;
+    list-style:none;
+    text-align: center;
+    top:50.4%;
+}
+
+#layout2 ul a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 96px;
 }
