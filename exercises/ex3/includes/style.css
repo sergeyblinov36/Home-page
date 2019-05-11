@@ -7,9 +7,17 @@ header,main,footer,nav,aside,article,section,div{
     display: block;
 }
 
-/*body*/
+/*
+----------------------------------------------------------------------------------------
+body
+----------------------------------------------------------------------------------------
+*/
 body{ font-family: Arial; }
-/*main*/
+/*
+----------------------------------------------------------------------------------------
+main
+----------------------------------------------------------------------------------------
+*/
 
 
 #layout1 main{
@@ -35,7 +43,12 @@ header {
  background-color: #F2E9E9;
  padding-top: 0.1px;
 }
-/*nav*/
+
+/*
+---------------------------------------------------------------------------
+nav
+---------------------------------------------------------------------------
+*/
 
 
 nav{
@@ -72,7 +85,8 @@ nav a:hover:before {
     width: 15px;
     height: 15px;
     border-radius: 100%;
-    left:calc(50% - 8px);
+    left:calc(35%);
+    
 }
 .dot {
     content: "";
@@ -85,14 +99,17 @@ nav a:hover:before {
     
 }
 #layout1 .dot{
-    left:calc(10% - 8px);
+    left:calc(7%);
 }
 
 #layout2 .dot{
-    left:calc(38% - 8px);
+    left:calc(33%);
 }
-/*footer*/
+#layout3 .dot{
+    left:15.7vw;
+}
 
+/*footer*/
 
 .boxes div{
     position: absolute;
@@ -246,8 +263,11 @@ width:136px;
     height: 196px;
     width: 28px;
 }
-
-/*layou2*/
+/*
+-----------------------------------------------------------------------------------------
+layou2
+-----------------------------------------------------------------------------------------
+*/
 
 #layout2 aside{
     
@@ -351,4 +371,106 @@ aside div::after{
     text-decoration: none;
     color: #000000;
     font-size: 96px;
+}
+
+/*
+----------------------------------------------------------------------------------
+layout3
+----------------------------------------------------------------------------------
+*/
+#layout3{
+    width: auto;
+    height: 100%;
+}
+
+#layout3 header{
+    height: 10vw;
+}
+
+#layout3 header div{
+    float: right;
+    margin: 1.5vw 1.5vw;
+    background-color: #000000;
+    height: 7vw;
+    width: 7vw;
+}
+
+
+.wrapper{
+    margin: 0px auto;
+    position: relative;
+    width: 100%;
+}
+
+
+
+#layout3 article{
+    position: relative;
+    float: left;
+    background-color: #E5E5E5;
+    width: 25vw;
+    clear: both;
+    min-height: 100vw;
+}
+
+#layout3 article nav{
+    position: relative;
+    margin-top: 30%;
+}
+#layout3 article nav a{
+   
+    font-size:1.75vw;
+}
+#layout3 .dot{
+    width: 1.37vw;
+    height: 1.37vw;
+    top:-1.4vw;
+    left:calc(35%);
+}
+#layout3 a:hover::before{
+    width: 1.37vw;
+    height: 1.37vw;
+    top:-1.4vw;
+    left:calc(35%);
+}
+
+#layout3 main{
+    float: left;
+    width:67vw;
+    min-height: 100vw;
+}
+
+#layout3 aside section{
+    position: absolute;
+    right:0px;
+    min-height: 100vw;
+    background-color: rgba(24, 239, 33, 0.3);
+    width: 8vw;
+}
+
+#layout3 footer{
+    position: fixed;
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    height: 41px;
+    width: 100vw;
+}
+
+
+@media screen and (max-width:480px){
+    #layout3 article{
+        min-height: 5vw;
+        height: 8vw;
+        width: 100%;
+        margin: 0 auto;
+    }
+    #layout3 article nav{
+
+        margin: -1vw 40vw;
+        width:30vw;
+    }
+    #layout3 aside{
+        display: none;
+    }
 }
