@@ -448,13 +448,20 @@ layout3
     width: 8vw;
 }
 
+.bottom{
+    width: 100%;
+    float: left;
+    background-color: #EBEF18;
+    height: 35vw;
+}
+
 #layout3 footer{
-    position: fixed;
+    float: left;
     bottom: 0; 
     left: 0; 
     right: 0; 
-    height: 41px;
-    width: 100vw;
+    height: 3vw;
+    width: 100%;
 }
 
 
