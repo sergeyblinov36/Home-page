@@ -43,30 +43,7 @@ let createSquare=function(){
 
 //===========================================================================/
 
-// let memoryFgame=function () {
-//     if (chosen.length >= 2) {
-//         clear();
-//     }
-//     // if (!this.className.includes('reveal')) {
-//     //     if (!this.className.includes('correct')) {
-//     //         this.className = ' reveal';
-//     //         chosen.push(this);
-//     //          if (chosen.length == 2) {
-//     //              compare();
-//     //          }
-//     //     }
-//     // }
-//     let fuck=this;
-//     fuck.className='reveal';
-//     chosen.push(this);
-//     if (chosen.length == 2) {
-//             compare();}
-//         else {
-//         clear();
-//     //}
 
-
-// }};
 $("main").on("click", ".square", function () {
   let obj=this;
   obj.className='reveal';
