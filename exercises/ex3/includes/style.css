@@ -400,11 +400,14 @@ layout3
     margin: 0px auto;
     position: relative;
     width: 100%;
+    height: 100%;
+    float: left;
+    display:flex;
 }
 
 
 
-#layout3 article{
+#layout3 .wrapper article{
     position: relative;
     float: left;
     background-color: #E5E5E5;
@@ -413,11 +416,11 @@ layout3
     min-height: 100vw;
 }
 
-#layout3 article nav{
+#layout3 nav{
     position: relative;
     margin-top: 30%;
 }
-#layout3 article nav a{
+#layout3 nav a{
    
     font-size:1.75vw;
 }
@@ -440,15 +443,19 @@ layout3
     min-height: 100vw;
 }
 
-#layout3 aside section{
+
+#layout3 .wrapper aside section{
     position: absolute;
     right:0px;
     min-height: 100vw;
+    display:block;
     background-color: rgba(24, 239, 33, 0.3);
     width: 8vw;
+    overflow: auto;
+    height: 100%;
 }
 
-.bottom{
+#bottom{
     width: 100%;
     float: left;
     background-color: #EBEF18;
@@ -463,6 +470,59 @@ layout3
     height: 3vw;
     width: 100%;
 }
+
+#layout3 main .square{
+    width: 80px;
+    height: 80px;;
+    margin: 150px 70px;
+    background-color: #000000;
+    float: left;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    display: flex;
+  }
+  
+
+.reveal{
+    width: 80px;
+    height: 80px;;
+    margin: 150px 70px;
+    background-color: #000000;
+    float: left;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    display: flex;
+}
+.reveal h1{
+    display: block;
+    color: #ffffff;
+}
+
+#layout3 .correct{
+    background-color: #EBEF18;
+    width: 80px;
+    height: 80px;;
+    margin: 150px 70px;
+    float: left;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    display: flex;
+}
+.correct h1{
+    display: block;
+    color: #000000;
+}
+
+
 
 
 @media screen and (max-width:480px){
@@ -481,3 +541,4 @@ layout3
         display: none;
     }
 }
+
