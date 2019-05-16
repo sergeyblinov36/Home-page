@@ -526,7 +526,7 @@ layout3
 
 
 @media screen and (max-width:480px){
-    #layout3 article{
+    #layout3 .wrapper article{
         min-height: 5vw;
         height: 8vw;
         width: 100%;
