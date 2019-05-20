@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="stylesheet" href="includes/style.css">
+</head>
+    <body>
+            <nav>
+                   
+                          <a href="login.html" class="button">Login</a>
+                  </nav>
+        <div class="container-fluid">
+        <form action="http://html5-book.co.il/teach/forms/get_form2.php" method="GET">
+            <fieldset>
+                
+                    <div class="form-group">
+                            <label>полное имя<input type="text" name="fullName" value="" class="form-control" title="name" required autocomplete="cc-name"></label>
+                            <br>
+                            <label>Пароль <input type="password" name="pass" value="" class="form-control" minlength="6" required ></label>
+                            <br>
+                            <label for="exampleInputEmail1"> Электронная Почта </label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" name="mail" value="" placeholder="Enter email" required  autocomplete="email">
+                            <br>
+                            <label>Сайт<input type="url" class="form-control" name="website" value="" placeholder="www.example.com" autocomplete="url"></label>
+                            <br>
+                            <label>Номер телефона <input type="tel" class="form-control" name="phone" value="" autocomplete="tel"></label>
+                            <br>
+                       
+            </fieldset>
+            <fieldset>
+                <label>Количество кофе:0-10 <input type="number" class="form-control" name="coffee" min="0" max="10"></label>
+                <br>
+                <label>Температура: 0-100<input type="range" class="form-control" name="temper" value="50" min="0" max="100" value="5"> </label>
+            </fieldset>
+            <fieldset>
+                <label>Адрес<input type="text" class="form-control" name="address" value="" cols="20" rows="1"></label>
+                <br>
+                <lable>Интересы :
+                        Книги <input type="checkbox" name="interests[]" value="1">
+                        Дети <input type="checkbox" name="interests[]" value="2">
+                        Спать <input type="checkbox" name="interests[]" value="3">
+                        учёба <input type="checkbox" name="interests[]" value="4">
+                        Уборка  <input type="checkbox" name="interests[]" value="5 ">
+                    </lable><br>
+            </fieldset>
+            <fieldset>
+                <legend>Пол</legend>
+                <label>Мужской <input type="radio" name="gender" value="male"></label>
+            </label>Женский<input type="radio" name="gender" value="female"></label>
+            </fieldset><br>
+            <div class="form-group">
+                    <label>Возраст :</label>
+                    <select name="age">
+                        <option value="1-19">1-19</option>
+                        <option value="20-29">20-29</option>
+                        <option value="30-39">30-39</option>
+                        <option value="40-100">40-100</option>
+                    </select>
+                </div>
+        </div>
+
+        <div class="form-group">  
+                <input type="submit" value="Submit" class="form-control">
+                </div>
+    </div>
+        </form >
+    </body>
+</html>
